@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # repeater's target dir
-REPEATER_TARGET_DIR=../target/repeater
+#REPEATER_TARGET_DIR=../target/repeater
+REPEATER_TARGET_DIR=E:/project/sandbox/sandbox-module
 
 # exit shell with err_code
 # $1 : err_code
@@ -33,8 +34,8 @@ cp ./repeater-logback.xml ${REPEATER_TARGET_DIR}/cfg/repeater-logback.xml \
     && cp ../repeater-plugins/spring-data-jpa-plugin/target/spring-data-jpa-plugin-*-jar-with-dependencies.jar ${REPEATER_TARGET_DIR}/plugins/spring-data-jpa-plugin.jar
 
 # tar the repeater.tar
-cd ../target/
-tar -zcvf repeater-stable-bin.tar repeater/
-cd -
+#cd ../target/
+#tar -zcvf repeater-stable-bin.tar repeater/
+#cd -
 
 echo "package repeater-stable-bin.zip finish."
